@@ -9,5 +9,7 @@ textarea.send_keys("get()")
 submit_button = driver.find_element(By.CSS_SELECTOR, ".submit-submission")
 submit_button.click()
 
-
+time.sleep(5)
 driver.quit()
+
+#Hello dear friend lol
