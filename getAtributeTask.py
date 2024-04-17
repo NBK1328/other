@@ -4,6 +4,7 @@ import time
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 
+# Нужен assert после каждого поиска желательно
 
 try:
     driver = webdriver.Chrome()
