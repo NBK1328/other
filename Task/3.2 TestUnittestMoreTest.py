@@ -7,6 +7,7 @@ import time
 class TestStep(unittest.TestCase):
     def test_Step1(self):
         link = "https://suninjuly.github.io/registration2.html"
+
         try:
             brow = webdriver.Chrome()
             brow.get(link)
@@ -27,6 +28,7 @@ class TestStep(unittest.TestCase):
             self.assertEqual("Congratulations! You have successfully registered!", txt_txt)
 
         finally:
+            time.sleep(5)
             brow.quit()
 
 if __name__ == "__main__":

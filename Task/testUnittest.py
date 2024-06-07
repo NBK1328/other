@@ -1,6 +1,6 @@
-import  unittest
+import unittest
 
-class TestAbs(unittest.TestCase):
+class TestAbs(unittest.TestCase): #Обязательное наследование от модуля unittest
     def test_abs1(self):
         self.assertEqual(abs(-42), 42,  "Should be absolute value of a number")
 
@@ -8,4 +8,6 @@ class TestAbs(unittest.TestCase):
         self.assertEqual(abs(-42), -42,  "Should be absolute value of a number")
 
 if __name__ == "__main__":
-    unittest.main
+    unittest.main()
+
+
