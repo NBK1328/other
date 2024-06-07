@@ -3,7 +3,7 @@ from selenium.webdriver.common.by import By
 import time
 
 try:
-    link = "https://suninjuly.github.io/registration2.html"
+    link = "https://suninjuly.github.io/registration1.html"
     brow = webdriver.Chrome()
     brow.get(link)
     fir = brow.find_element(By.CSS_SELECTOR, "div.first_block > div.form-group.first_class > input")
