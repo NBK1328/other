@@ -2,16 +2,16 @@ import unittest
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 import time
-
+# СМОТРЕТЬ ФАЙЛ pytestExample там все исправленно
 
 def FindElement(link):
     with webdriver.Chrome() as brow:
 
         brow.get(link)
-        fir = brow.find_element(By.CSS_SELECTOR, "div.first_block > div.form-group.first_class > input").send_keys("123")
-        sec = brow.find_element(By.CSS_SELECTOR, "div.first_block > div.form-group.second_class > input").send_keys("123")
-        thir = brow.find_element(By.CSS_SELECTOR, "div.first_block > div.form-group.third_class > input").send_keys("123")
-        btn = brow.find_element(By.CSS_SELECTOR, "button[type='submit']").click()
+        brow.find_element(By.CSS_SELECTOR, '.first_block .first').send_keys('knock')
+        brow.find_element(By.CSS_SELECTOR, '.first_block .second').send_keys('knock')
+        brow.find_element(By.CSS_SELECTOR, '.third_class .third').send_keys('Knock-knock')
+        brow.find_element(By.CSS_SELECTOR, "button[type='submit']").click()
 
         time.sleep(1)
 
