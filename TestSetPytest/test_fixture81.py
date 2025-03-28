@@ -4,7 +4,7 @@ from selenium.webdriver.common.by import By
 
 link = "http://selenium1py.pythonanywhere.com/"
 #Смотреть файл test_fixture81.py, здесь же дополнение для использование НЕСКОЛЬКИХ маркеров.
-#Маркеры smoke И win10
+#Маркеры smoke и win10
 #pytest -s -v -m "smoke and win10" file_name - запуск тестов с несколькими маркерами "and"
 
 @pytest.fixture(scope="function")
