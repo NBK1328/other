@@ -27,3 +27,8 @@ class TestMainPage1():
     def test_guest_should_see_basket_link_on_the_main_page(self, browser):
         browser.get(link)
         browser.find_element(By.CSS_SELECTOR, ".basket-mini .btn-group > a")
+
+# Если маркировка skip добавляется к функции, где уже есть другие маркировки, то skip должен быть последним маркером, иначе пропускаться не будет. 
+# @pytest.mark.regression
+# @pytest.mark.win10
+# @pytest.mark.skip 
